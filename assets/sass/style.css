@@ -25359,6 +25359,7 @@ font-size: 12px!important;
 }
 .inc-btn{
   cursor: pointer;
+  color:white!important;
 }
 .shp-btn{
   background-color: black!important;
@@ -25549,4 +25550,10 @@ margin-top: -7px;
       }
    
    
+    }
+    .prduct-img img{
+      height: 400px!important;
+    }
+    #header{
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
