@@ -1522,3 +1522,43 @@ a.forEach(item => {
         cursor.classList.remove('hover');
     });
 })
+const otpInputs = document.querySelectorAll('.otp_digit_field');
+        
+otpInputs.forEach((input, index) => {
+    input.addEventListener('keyup', function(e) {
+        // Move to next input if current field is filled
+        if (this.value.length === 1 && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+        }
+        
+        // Allow backspace to go to previous input
+        if (e.key === 'Backspace' && index > 0 && this.value.length === 0) {
+            otpInputs[index - 1].focus();
+        }
+    });
+});
+
+// Countdown timer
+function startOtpTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    let interval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(interval);
+            display.textContent = "00:00";
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    let fiveMinutes = 60 * 5,
+        display = document.querySelector('#otp_countdown');
+    startOtpTimer(fiveMinutes, display);
+};
