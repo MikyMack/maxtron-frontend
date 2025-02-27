@@ -2,14 +2,14 @@
 <html lang="en">
 
 
-<!-- Mirrored from wpocean.com/html/tf/bliize-live/forgot.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 05:33:00 GMT -->
+<!-- Mirrored from wpocean.com/html/tf/bliize-live/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 05:32:47 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpOceans">
     <link rel="shortcut icon" type="image/png" href="assets/images/max-logo.png">
-    <title>Maxtron Associate </title>
+    <title>Maxtron Associate</title>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <!--=====start page-wrapper =====-->
     <div class="page-wrapper">
          <!--===== start preloader =====-->
-         <div class="preloader">
+        <div class="preloader">
             <div class="vertical-centered-box">
                 <div class="content">
                     <div class="loader-circle"></div>
@@ -46,64 +46,39 @@
         <!--  cursor style -->
         <div class="cursor"></div>
         <div class="cursor2"></div>
-
-        <div class="wpo-login-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form class="wpo-accountWrapper" action="#">
-                            <div class="wpo-accountInfo">
-                                <div class="wpo-accountInfoHeader">
-                                    <a href="index.html"><img class="login-logo" src="assets/images/max-logo.png" alt=""></a>
-                                    <a class="wpo-accountBtn" href="register.html">
-                                        Create Account
-                                    </a>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/login.png" alt="">
-                                </div>
-                                <div class="back-home">
-                                    <a class="wpo-accountBtn" href="index.html">
-                                        Back To Home
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="wpo-accountForm form-style">
-                                <div class="fromTitle">
-                                    <h2>Reset Password</h2>
-                                    <p>Sign into your pages account</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-12">
-                                        <label>Email</label>
-                                        <input type="text" id="email" name="email" placeholder="Your email here..">
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
-                                        <button type="submit" class="wpo-accountBtn">Resend Password</button>
-                                    </div>
-                                </div>
-                                <h4 class="or"><span>OR</span></h4>
-                                <ul class="wpo-socialLoginBtn">
-                                    <li><button class="facebook" tabindex="0" type="button"><span><i
-                                                    class="ti-facebook"></i></span></button></li>
-                                    <li><button class="twitter" tabindex="0" type="button"><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M18.37 1.5H21L14.12 10.1 22.51 22.5H15.9L10.94 15.22 4.98 22.5H2.35L9.8 13.2 1.85 1.5H8.6L13.09 8.1 18.37 1.5ZM17.19 20.58H19.06L7.05 3.35H5.04L17.19 20.58Z"/>
-                                      </svg></span></button></li>
-                                    <li><button class="linkedin" tabindex="0" type="button"><span><i
-                                                    class="ti-linkedin"></i></span></button></li>
-                                </ul>
-                                <p class="subText">Don't have an account? <a href="register.html">Create free
-                                        account</a></p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+  <div class="otp-main">
+    <div class="otp_main_container">
+        <div class="otp_logo_wrapper">
+            <div class="otp_logo_circle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
             </div>
         </div>
-
-
+        
+        <h1 class="otp_heading">Verification Code</h1>
+        <p class="otp_description">We have sent a verification code to your phone number. Please enter the 4-digit code below to verify your account.</p>
+        
+        <div class="otp_input_wrapper">
+            <input type="text" class="otp_digit_field" maxlength="1" autofocus>
+            <input type="text" class="otp_digit_field" maxlength="1">
+            <input type="text" class="otp_digit_field" maxlength="1">
+            <input type="text" class="otp_digit_field" maxlength="1">
+        </div>
+        
+        <div class="otp_timer_text">
+            Code expires in <span id="otp_countdown">05:00</span>
+        </div>
+        
+        <button class="otp_verify_button">Verify</button>
+        
+        <div class="otp_resend_wrapper">
+            Didn't receive a code? <a href="#" class="otp_resend_link">Resend</a>
+        </div>
     </div>
-              <!-- Mobile Bottom Navbar -->
+  </div>
+             <!-- Mobile Bottom Navbar -->
   <nav class="mb_navbar_container">
     <a href="index.html" class="mb_navbar_item ">
       <div class="mb_navbar_icon_wrapper">
@@ -170,5 +145,5 @@
 </body>
 
 
-<!-- Mirrored from wpocean.com/html/tf/bliize-live/forgot.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 05:33:00 GMT -->
+<!-- Mirrored from wpocean.com/html/tf/bliize-live/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 05:32:47 GMT -->
 </html>
