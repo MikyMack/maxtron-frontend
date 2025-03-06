@@ -25705,7 +25705,44 @@ margin-top: -7px;
           height: 60px;
           font-size: 24px;
       }
+      .ft-icons{
+        font-size: 13px!important;
+      }
+      .serdtls-img img{
+        height: 100px!important;
+        object-fit: cover;
+      }
   }
 .pre-logo{
   height: 70px;
+}
+.ser-dtl img{
+  height: 500px!important;
+  object-fit: cover;
+}
+.serdtls-img img{
+  height: 600px!important;
+  object-fit: cover;
+}
+.quantity-order{
+   background-color: #f2f3f4;
+   border-radius: 20px;
+}
+@media(min-width:1200px){
+  .navbar-nav li a{
+    font-size: 1.2vw!important;
+  }
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  .navbar-nav li a {
+    font-size: 1.2vw !important;
+  }
+}
+.ser-btn{
+  background-color: black;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 2rem;
 }
